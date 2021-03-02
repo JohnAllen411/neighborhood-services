@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "family_services",
+  "info": {
+    "name": "FamilyService"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "family": {
+      "model": "family",
+      "via": "family_services"
+    },
+    "service": {
+      "model": "service",
+      "via": "family_services"
+    },
+    "neighborhood_supervisor": {
+      "model": "neighborhood-supervisor",
+      "via": "family_services"
+    },
+    "deliveryDate": {
+      "type": "string"
+    }
+  }
+}

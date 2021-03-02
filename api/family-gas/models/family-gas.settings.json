@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "family_gases",
+  "info": {
+    "name": "FamilyGas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "family": {
+      "model": "family",
+      "via": "family_gases"
+    },
+    "gas_company": {
+      "model": "gas-company",
+      "via": "family_gases"
+    },
+    "numberOfGasCylinders": {
+      "type": "string"
+    }
+  }
+}

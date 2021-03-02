@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "families",
+  "info": {
+    "name": "Family"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "headOfFamilyName": {
+      "type": "string"
+    },
+    "numberOfFamilyMembers": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    },
+    "barcodeNumber": {
+      "type": "text"
+    },
+    "barcodeImage": {
+      "type": "text"
+    },
+    "password": {
+      "type": "string"
+    },
+    "neighborhood": {
+      "model": "neighborhood",
+      "via": "families"
+    },
+    "family_gases": {
+      "via": "family",
+      "collection": "family-gas"
+    },
+    "family_services": {
+      "via": "family",
+      "collection": "family-service"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/gas-companies",
+      "handler": "gas-company.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/gas-companies/count",
+      "handler": "gas-company.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/gas-companies/:id",
+      "handler": "gas-company.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/gas-companies",
+      "handler": "gas-company.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/gas-companies/:id",
+      "handler": "gas-company.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/gas-companies/:id",
+      "handler": "gas-company.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

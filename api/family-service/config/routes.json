@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/family-services",
+      "handler": "family-service.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/family-services/count",
+      "handler": "family-service.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/family-services/:id",
+      "handler": "family-service.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/family-services",
+      "handler": "family-service.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/family-services/:id",
+      "handler": "family-service.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/family-services/:id",
+      "handler": "family-service.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

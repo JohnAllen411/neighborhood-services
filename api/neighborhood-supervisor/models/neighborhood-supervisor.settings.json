@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "neighborhood_supervisors",
+  "info": {
+    "name": "NeighborhoodSupervisor"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "password": {
+      "type": "string"
+    },
+    "neighborhood": {
+      "model": "neighborhood",
+      "via": "neighborhood_supervisors"
+    },
+    "family_services": {
+      "via": "neighborhood_supervisor",
+      "collection": "family-service"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/family-gases",
+      "handler": "family-gas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/family-gases/count",
+      "handler": "family-gas.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/family-gases/:id",
+      "handler": "family-gas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/family-gases",
+      "handler": "family-gas.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/family-gases/:id",
+      "handler": "family-gas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/family-gases/:id",
+      "handler": "family-gas.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

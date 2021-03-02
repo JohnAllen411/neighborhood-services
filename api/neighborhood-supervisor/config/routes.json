@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/neighborhood-supervisors",
+      "handler": "neighborhood-supervisor.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/neighborhood-supervisors/count",
+      "handler": "neighborhood-supervisor.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/neighborhood-supervisors/:id",
+      "handler": "neighborhood-supervisor.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/neighborhood-supervisors",
+      "handler": "neighborhood-supervisor.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/neighborhood-supervisors/:id",
+      "handler": "neighborhood-supervisor.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/neighborhood-supervisors/:id",
+      "handler": "neighborhood-supervisor.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
